@@ -1,0 +1,51 @@
+h2  {
+    color: #282835;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: left;
+}
+h3  {
+    color: #8a8aa1;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: left;
+}
+p {
+padding-left: 20px;
+}
+@media screen and (min-width: 980px) /* Desktop */ {
+    .navMain{
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width:800px; 
+        background-color:#884242; 
+        margin: 0 auto; 
+        margin-top:20px; 
+        padding:10px;
+    }
+    .navHead{
+        max-width:800px; 
+        background-color:#ffcbbb; 
+        margin: 0 auto; 
+        margin-top:0px; 
+        padding:10px;
+    }
+}
+@media screen and (max-width: 500px) /* Mobile */ {
+    .navMain{
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width:500px; 
+        background-color:#884242; 
+        margin: 0 auto; 
+        margin-top:20px; 
+        padding:10px;
+    }
+    .navHead{
+        max-width:500px; 
+        background-color:#ffcbbb; 
+        margin: 0 auto; 
+        margin-top:0px; 
+        padding:10px;
+    }
+}
