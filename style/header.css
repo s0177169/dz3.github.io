@@ -5,8 +5,6 @@ h1  {
     text-align: left;
 }
 .headbox{
-    flex-direction: column;
-    justify-content: flex-start;
     width:100%; 
     background-color:#790000; 
     padding: 10px; 
@@ -43,21 +41,3 @@ h1  {
     padding:12px;
   }
 }
-
-#main-aside-wrapper {
-    flex-direction: row;
-    display: flex;
-  }
-  #main-aside-wrapper main, #main-aside-wrapper aside {
-    background-color: #ddd;
-    margin: 10px;
-    padding: 10px;
-  }
-  #main-aside-wrapper aside {
-    flex: 1;
-    order: 1;
-  }
-  #main-aside-wrapper main {
-    flex: 3;
-    order: 2;
-  }

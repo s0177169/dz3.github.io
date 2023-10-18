@@ -11,18 +11,38 @@ h3  {
     text-align: left;
 }
 p {
-padding-left: 20px;
+    padding-left: 20px;
 }
 @media screen and (min-width: 980px) /* Desktop */ {
-    .navMain{
+    #main-aside-wrapper {
         flex-direction: column;
-        justify-content: flex-start;
-        max-width:800px; 
+        display: flex;
+       }
+       #main-aside-wrapper tuble, #main-aside-wrapper links, #main-aside-wrapper navig, #main-aside-wrapper forma {
+        max-width:800px;
+        max-height:0 auto;
+        min-width: 500px;
         background-color:#884242; 
         margin: 0 auto; 
         margin-top:20px; 
         padding:10px;
-    }
+       }
+       #main-aside-wrapper tuble {
+        flex: 1;
+        order: 2;
+       }
+       #main-aside-wrapper links {
+        flex: 1;
+        order: 1;
+       }
+       #main-aside-wrapper navig {
+        flex: 1;
+        order: 1;
+       }
+       #main-aside-wrapper forma {
+        flex: 1;
+        order: 1;
+       }
     .navHead{
         max-width:800px; 
         background-color:#ffcbbb; 
@@ -32,15 +52,43 @@ padding-left: 20px;
     }
 }
 @media screen and (max-width: 500px) /* Mobile */ {
-    .navMain{
+    #main-aside-wrapper {
         flex-direction: column;
-        justify-content: flex-start;
+        display: flex;
+       }
+       #main-aside-wrapper tuble, #main-aside-wrapper links, #main-aside-wrapper navig, #main-aside-wrapper forma {
+        width:500px; 
+        max-height:0 auto;
+        background-color:#884242; 
+        margin: 0 auto; 
+        margin-top:20px; 
+        padding:10px;
+       }
+       #main-aside-wrapper tuble {
+        flex: 1;
+        order: -1;
+       }
+       #main-aside-wrapper links {
+        flex: 1;
+        order: 1;
+       }
+       #main-aside-wrapper navig {
+        flex: 1;
+        order: 1;
+       }
+       #main-aside-wrapper forma {
+        flex: 1;
+        order: 1;
+       }
+    /*
+    .navMain{
         max-width:500px; 
         background-color:#884242; 
         margin: 0 auto; 
         margin-top:20px; 
         padding:10px;
     }
+    */
     .navHead{
         max-width:500px; 
         background-color:#ffcbbb; 

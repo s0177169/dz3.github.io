@@ -6,8 +6,6 @@ h4  {
 }
 @media screen and (min-width: 980px) /* Desktop */ {
     .footerMain {
-        flex-direction: column;
-        justify-content: flex-start;
         margin-top: 20px;
         width:100%; 
         background-color:#884242; 
@@ -19,8 +17,6 @@ h4  {
 }
 @media screen and (max-width: 500px) /* Mobile */ {
     .footerMain {
-        flex-direction: column;
-        justify-content: flex-start;
         margin-top: 20px;
         width:100%; 
         background-color:#884242; 
